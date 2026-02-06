@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>ProduitComplexes</title>
+    <title>P_25: Fusion tableaux triés dans le sens décroissant</title>
     
     <link rel="shortcut icon" href="https://schooding-media.ams3.digitaloceanspaces.com/static/images/logo.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -63,7 +63,7 @@
     var removeRoleUrl = "/removerole/";  
     var markMessageUrl = "/forum/message/markviewed/12345/";
     var userId = 19023;
-    var csrfToken = "DEvY8MhcmzJ1gtqfeRGoSWJjWwBp39MbhNMb5PSwalmA4qDeeKVVv2GqI5fjypjg";
+    var csrfToken = "CF9Pta7BUM59yumnppDhAbHpktePvP50DopSBpr9kKH4F9n5cbT0dEvhZQ7KK2Tq";
    var notificationsUrl = "/notifs/list/12345/";
     var mailsUrl = "/forum/maillist/12345/";
     var notifReadUrl = "/notifs/readall/";
@@ -105,11 +105,11 @@
 
 
 <script>
-var exerciceId = 4600; 
+var exerciceId = 4843; 
 var isStudent = true;
 var elapsedTimeAtLoad = parseInt(.0);
 var attempts = parseInt(.0);
-var currentProgression = parseInt(100.0);
+var currentProgression = parseInt(66.0);
 var inSession = false;
 var isHomework = false;
 var homeworkUnlocked = false;
@@ -130,10 +130,10 @@ try {
 
 
   
-  var sendMessageUrl = "/forum/chat/studentmessage/4600/";
-  var chatHistoryUrl = "/forum/chat/history/4600/19023/12345/";
+  var sendMessageUrl = "/forum/chat/studentmessage/4843/";
+  var chatHistoryUrl = "/forum/chat/history/4843/19023/12345/";
 
-  var askForHelpUrl = "/askforhelp/4600";
+  var askForHelpUrl = "/askforhelp/4843";
   
 var updateActivityUrl = "/activities/update/";
 
@@ -182,9 +182,17 @@ var updateActivityUrl = "/activities/update/";
     <div class="fixed-top schoodiv" id="navbars"></div><div id="leftSidebar" class="leftsidebar fitToBottom deployable  schoodiv"><div class="sidebuttonbar  minimizable  ml-1"><div class="btn btn-circle btn-outline-dark deployer mt-1"><span class="material-icons">arrow_left</span></div><div class="btn btn-primary verticaltext mt-1 wordingCard partialminimizer" data-target="#wordingCard">Enoncé</div><div class="btn btn-secondary verticaltext mt-1 toolsCard partialminimizer" data-target="#toolsCard"
   style="display:none">Outils</div><div class="btn btn-success verticaltext mt-1 gradeCard partialminimizer" data-target="#gradeCard"
     style="display:none">Notation</div><div class="btn btn-info verticaltext mt-1 lastresultcontainer partialminimizer" data-target="#lastresultcontainer"
-  style="display:none">Dernier résultat</div></div><div class="splitbar minimizable "></div><div id="leftSidebarContent" class="minimizable fitToBottom vflexcontainer"><div id="wordingCol" class="fitToBottom d-flex flex-column"><div class="card partialminimizable mb-2 mt-2 wordingCard minflexitem text-justify" id="wordingCard"><div class="bg-primary card-header text-light"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Enoncé</h5></div><div tabindex="0" class="card-body yscroller wording" id="wording" aria-labelledby="wording"><h5 class="langvarhtml">$TR$fr ProduitComplexes</h5><div class="langvarhtml">$TR$fr <p>Based on the "Complex" data structure, create a function  "ProduitComplexes",  that takes 2 complex numbers z1 and z2 as parameters and returns the product of these 2 complex numbers.. <br/></p></div><div class="langvarhtml"></div><div id="specWording"></div></div></div><div class="card partialminimizable  mb-2 mt-2 toolsCard minflexitem text-justify  wording" id="toolsCard"
+  style="display:none">Dernier résultat</div></div><div class="splitbar minimizable "></div><div id="leftSidebarContent" class="minimizable fitToBottom vflexcontainer"><div id="wordingCol" class="fitToBottom d-flex flex-column"><div class="card partialminimizable mb-2 mt-2 wordingCard minflexitem text-justify" id="wordingCard"><div class="bg-primary card-header text-light"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Enoncé</h5></div><div tabindex="0" class="card-body yscroller wording" id="wording" aria-labelledby="wording"><h5 class="langvarhtml">$TR$fr P_25: Fusion tableaux triés dans le sens décroissant</h5><div class="langvarhtml">$TR$fr <p></p><p class="MsoNormal">Écrire une fonction C# "FusionnerTableauxTriesDecroissant"
+qui reçoit en paramètres 2 tableaux triés dans le sens décroissant et qui<span style="color: rgb(0, 0, 0);"><code><span style="font-size:10.0pt;line-height:107%;"></span></code></span><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;'>les fusionne
+en un <b>unique tableau trié</b> décroissant.</span></p><ul><li><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;'>Si l’un des
+tableaux reçus en paramètres n’est pas trié  <span>dans le</span> sens décroissant
+alors on affiche le message suivant «Fusion impossible : l’un des tableaux est non trié décroissant»
+et le tableau fusion à retourner sera null.</span></li></ul><ul><li><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;'>Si l’un
+tableau reçus en paramètres est null ou vide alors on affiche le message
+suivant «Un des tableaux est null ou vide» et le tableau fusion à retourner
+sera null.</span></li><li><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;'>Exemple: si t1={25,19,12,9,7} et t2={20,15,11,6,4} alors le tableau fusion={25,20,19,15,12,11,9,6,4} est à retourner.</span></li></ul><p><span style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;'>Votre programme démarre à la <span style="background-color: rgb(255, 255, 0);">ligne 51</span> du programme principal (cette information est utile lors de la phase de compilation pour désigner la ligne indiquant une erreur de compilation)</span></p></div><div class="langvarhtml"></div><div id="specWording"></div></div></div><div class="card partialminimizable  mb-2 mt-2 toolsCard minflexitem text-justify  wording" id="toolsCard"
     style="display:none"><div class="card-header text-white bg-secondary"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Outils</h5></div><div tabindex="0" class="card-body yscroller" id="tools" aria-labelledby="tools"></div></div><div class="card partialminimizable  mb-2 mt-2 gradeCard minflexitem text-justify" id="gradeCard"
-  style="display:none"><div class="card-header text-white bg-success"><div class="btn-group  float-right"><a href="/codingtest/lastresult/4600/123456789/" id="previousStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant précédent"><span class='material-icons'>skip_previous</span></a><a href="/codingtest/lastresult/4600/123456789/"  id="nextStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant suivant"><span class='material-icons'>skip_next</span></a></div><h5>Notation
+  style="display:none"><div class="card-header text-white bg-success"><div class="btn-group  float-right"><a href="/codingtest/lastresult/4843/123456789/" id="previousStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant précédent"><span class='material-icons'>skip_previous</span></a><a href="/codingtest/lastresult/4843/123456789/"  id="nextStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant suivant"><span class='material-icons'>skip_next</span></a></div><h5>Notation
       <div class="btn-group"><button class="btn-outline-light btn btn-sm " data-toggle="tooltip"  title="Tout valider" onclick="setAllgrades(100)"><span class='material-icons'>check</span></button><button class="btn-outline-dark btn btn-sm " data-toggle="tooltip" title="Tout invalider" onclick="setAllgrades(0)"><span class='material-icons'>cancel</span></button></div></h5></div><div class="card-body list-group yscroller" id="gradelist" aria-labelledby="gradelist"></div></div><div class="card partialminimizable mb-2 mt-2 lastresultcontainer minflexitem" id="lastresultcontainer"
     style="display:none"><div class="card-header text-white bg-info"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Dernier résultat</h5></div><div tabindex="0" class="card-body p-0 yscroller" id="lastresult" aria-labelledby="lastresult"><div id="progressContent" class="bg-white fullscreen-small fullscreen-content" ><h2>En cours d'évaluation</h2><div id="progressContentBody"></div><button class="btn btn-secondary float-right m-2 fullscreen-btn">Revenir à l'exercice</button></div><div id="resultContent"  class="bg-white fullscreen-large fullscreen-content" style="display: flex;flex-direction:column;"><h2 class="only-fullscreen mt-2 mb-2"><img id='gifplace'  style="height:100px;border-radius:10px;margin-right:10px;"><span id="resultContentTitle"></span></h2><div id="resultContentBody" class=" list-group" style="flex: 1 0;"></div><div id="resultContentFooter" class="success-actions-bar  only-fullscreen"><div class="float-right m-2" id="resultModal"><button class="btn btn-secondary fullscreen-btn">Revenir à l'exercice</button><button class="modal-okbutton btn  fullscreen-btn btn-primary ml-2">Réessayer</button></div></div></div><div id="messageContent"  class="bg-white fullscreen-small fullscreen-content"><h2 id="messageContentTitle"></h2><div id="messageContentBody"></div><button class="btn btn-secondary float-right m-2 fullscreen-btn">Revenir à l'exercice</button></div></div></div></div></div><div  class="minimizedsidebar ml-1 mt-1"><div class="btn minimizer btn-circle btn-outline-dark"><span class="material-icons">arrow_right</span></div><div class="btn btn-primary verticaltext mt-1 wordingCard partialminimizer" data-target="#wordingCard">Enoncé</div><div class="btn btn-secondary verticaltext mt-1 toolsCard partialminimizer" data-target="#toolsCard"
   style="display:none">Outils</div><div class="btn btn-success verticaltext mt-1 gradeCard partialminimizer" data-target="#gradeCard"
@@ -213,7 +221,7 @@ var updateActivityUrl = "/activities/update/";
     
     
     //ide
-    initCodingTestIDE(16, "chrome", "", "csharp")
+    initCodingTestIDE(16, "chrome", "static int[] FusionnerTableauxTriesDecroissant(int[] tab1, int[] tab2)\u000A{\u000A    if(tab1!\u003Dnull \u0026\u0026 tab2 !\u003D null \u0026\u0026 tab1.Length\u003E0 \u0026\u0026 tab2.Length\u003E0)\u000A    {\u000A        int a \u003D 0\u003B\u000A        for(int i \u003D 0\u003B i\u003Ctab1.Length\u002D1\u003B i++)\u000A        {\u000A            if(tab1[i]\u003Ctab1[i+1])\u000A            {\u000A                a\u003D1\u003B\u000A            }\u000A        }\u000A        for(int i \u003D 0\u003B i\u003Ctab2.Length\u002D1\u003B i++)\u000A        {\u000A            if(tab2[i]\u003Ctab2[i+1])\u000A            {\u000A                a\u003D1\u003B\u000A            }\u000A        }\u000A        if(a\u003D\u003D0)\u000A        {\u000A    int[] tab3 \u003D new int[tab1.Length+tab2.Length]\u003B\u000A    for(int i \u003D 0\u003B i\u003Ctab1.Length\u003B i++)\u000A    {\u000A        tab3[i]\u003Dtab1[i]\u003B\u000A    }\u000A    int k \u003D 0\u003B\u000A    for(int j \u003D 0\u003B j\u003Ctab2.Length\u003B j++)\u000A        {\u000A            tab3[tab1.Length+j]\u003Dtab2[k]\u003B\u000A            k++\u003B\u000A        }\u000A    Array.Sort(tab3)\u003B\u000A    Array.Reverse(tab3)\u003B\u000A    return tab3\u003B\u000A    }\u000A    else\u000A    {\u000A        Console.WriteLine(\u0022Fusion impossible : l\u0027un des tableaux est non trié décroissant\u0022)\u003B\u000A        return null\u003B\u000A    }\u000A    }\u000A    \u000A    else\u000A    {\u000A        Console.WriteLine(\u0022Un des tableaux est null ou vide\u0022)\u003B\u000A        return null\u003B\u000A    }\u000A    \u000A}", "csharp")
     
 
 
@@ -260,11 +268,9 @@ var updateActivityUrl = "/activities/update/";
       });
     }
     
-    addHistory(17922929, "9 décembre 2025 12:06", 0, "C#");
+    addHistory(16391066, "20 mai 2025 14:01", 66, "C#");
     
-    addHistory(18095544, "30 décembre 2025 19:53", 100, "C#");
-    
-    addHistory(18491326, "19 janvier 2026 19:45", 0, "C#");
+    addHistory(16393294, "20 mai 2025 14:08", 66, "C#");
     
     
 
@@ -285,7 +291,7 @@ var updateActivityUrl = "/activities/update/";
         $.post({
           url: "/exercice/reinit/",
           data: {
-            exercice: 4600,
+            exercice: 4843,
         student: 19023,
       language: current_language_id
         },
@@ -321,7 +327,7 @@ var updateActivityUrl = "/activities/update/";
       hasFirstSubmitted = isStudent;
       ide.resetChange();
       runBtn.prop('disabled', true);
-      submitCode(ide.getContent(), 4600, 9 );
+      submitCode(ide.getContent(), 4843, 9 );
     setExerciceCountDown(10);
   }
 
