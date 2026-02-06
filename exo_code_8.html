@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>StructCompte</title>
+    <title>RAT_8</title>
     
     <link rel="shortcut icon" href="https://schooding-media.ams3.digitaloceanspaces.com/static/images/logo.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -63,7 +63,7 @@
     var removeRoleUrl = "/removerole/";  
     var markMessageUrl = "/forum/message/markviewed/12345/";
     var userId = 19023;
-    var csrfToken = "624COdN0wKEqkt2ow7MVDENZDkmpPkCiKblPLgokkwhZ8qfnw01sgKK6pT0jkA9n";
+    var csrfToken = "IcvOluepzab1qKsBFZDkg7JqRQycFgEjJVLRtJyXZ8NWxptjsLT3TAxiwdr7UtsJ";
    var notificationsUrl = "/notifs/list/12345/";
     var mailsUrl = "/forum/maillist/12345/";
     var notifReadUrl = "/notifs/readall/";
@@ -105,11 +105,11 @@
 
 
 <script>
-var exerciceId = 4604; 
+var exerciceId = 4684; 
 var isStudent = true;
 var elapsedTimeAtLoad = parseInt(.0);
 var attempts = parseInt(.0);
-var currentProgression = parseInt(100.0);
+var currentProgression = parseInt(0.0);
 var inSession = false;
 var isHomework = false;
 var homeworkUnlocked = false;
@@ -130,10 +130,10 @@ try {
 
 
   
-  var sendMessageUrl = "/forum/chat/studentmessage/4604/";
-  var chatHistoryUrl = "/forum/chat/history/4604/19023/12345/";
+  var sendMessageUrl = "/forum/chat/studentmessage/4684/";
+  var chatHistoryUrl = "/forum/chat/history/4684/19023/12345/";
 
-  var askForHelpUrl = "/askforhelp/4604";
+  var askForHelpUrl = "/askforhelp/4684";
   
 var updateActivityUrl = "/activities/update/";
 
@@ -182,9 +182,9 @@ var updateActivityUrl = "/activities/update/";
     <div class="fixed-top schoodiv" id="navbars"></div><div id="leftSidebar" class="leftsidebar fitToBottom deployable  schoodiv"><div class="sidebuttonbar  minimizable  ml-1"><div class="btn btn-circle btn-outline-dark deployer mt-1"><span class="material-icons">arrow_left</span></div><div class="btn btn-primary verticaltext mt-1 wordingCard partialminimizer" data-target="#wordingCard">Enoncé</div><div class="btn btn-secondary verticaltext mt-1 toolsCard partialminimizer" data-target="#toolsCard"
   style="display:none">Outils</div><div class="btn btn-success verticaltext mt-1 gradeCard partialminimizer" data-target="#gradeCard"
     style="display:none">Notation</div><div class="btn btn-info verticaltext mt-1 lastresultcontainer partialminimizer" data-target="#lastresultcontainer"
-  style="display:none">Dernier résultat</div></div><div class="splitbar minimizable "></div><div id="leftSidebarContent" class="minimizable fitToBottom vflexcontainer"><div id="wordingCol" class="fitToBottom d-flex flex-column"><div class="card partialminimizable mb-2 mt-2 wordingCard minflexitem text-justify" id="wordingCard"><div class="bg-primary card-header text-light"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Enoncé</h5></div><div tabindex="0" class="card-body yscroller wording" id="wording" aria-labelledby="wording"><h5 class="langvarhtml">$TR$fr StructCompte</h5><div class="langvarhtml">$TR$fr <p>Create  C# data structure 'Compte' characterized by a Client c, a balance named 'montant'  and an account number 'numCompte' (int).<br/></p></div><div class="langvarhtml"></div><div id="specWording"></div></div></div><div class="card partialminimizable  mb-2 mt-2 toolsCard minflexitem text-justify  wording" id="toolsCard"
+  style="display:none">Dernier résultat</div></div><div class="splitbar minimizable "></div><div id="leftSidebarContent" class="minimizable fitToBottom vflexcontainer"><div id="wordingCol" class="fitToBottom d-flex flex-column"><div class="card partialminimizable mb-2 mt-2 wordingCard minflexitem text-justify" id="wordingCard"><div class="bg-primary card-header text-light"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Enoncé</h5></div><div tabindex="0" class="card-body yscroller wording" id="wording" aria-labelledby="wording"><h5 class="langvarhtml">$TR$en RAT_8$TR$fr RAT_8</h5><div class="langvarhtml">$TR$en <p>Based on the "Fraction" structure, the "SimplificationFraction" function, and the following code that performs mathematical operations (addition, subtraction, multiplication, and division) on two fractions q1 and q2 when the operation is possible:</p><p>static void Main(string[] args)<br/>    {<br/>        Fraction q1,q2,add,sous,mult,div;</p><p>        q1.num=Convert.ToInt32(Console.ReadLine());</p><p>        q1.denom=Convert.ToInt32(Console.ReadLine());</p><p>         q2.num=Convert.ToInt32(Console.ReadLine());        </p><p>         q2.denom=Convert.ToInt32(Console.ReadLine());<br/>        OperationsMathFractions(q1,q2,ref add,ref sous,ref mult,ref div);<br/>    }<br/></p><p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Develop the "OperationsMathFractions" method ensuring that each mathematical operation returns a fraction in its simplified form.</p><p class="font-claude-response-body break-words whitespace-pre-wrap leading-[1.7]">If one of the mathematical operations is impossible, the following message must be displayed according to the operation: </p><p>"Addition impossible"</p><p>"Soustraction impossible"</p><p>"Division impossible"</p><p>"Multiplication impossible"</p><p>Your code starts at line 8.</p><p><br/></p>$TR$fr <p>En se basant sur la structure "Fraction", la fonction "SimplificationFraction" et le code suivant qui permet de faire des opérations mathématiques (addition, soustraction, multiplication et division) sur les deux fractions q1 et q2 quand l'opération est possible:</p><p>static void Main(string[] args)<br/>    {<br/>        Fraction q1,q2,add,sous,mult,div;</p><p>        q1.num=Convert.ToInt32(Console.ReadLine());</p><p>        q1.denom=Convert.ToInt32(Console.ReadLine());</p><p>         q2.num=Convert.ToInt32(Console.ReadLine());        </p><p>         q2.denom=Convert.ToInt32(Console.ReadLine());<br/>        OperationsMathFractions(q1,q2,ref add,ref sous,ref mult,ref div);<br/>    }<br/></p><p>Développer la méthode "OperationsMathFractions" en veillant à ce que chaque opération mathématique retourne une fraction sous sa forme simplifiée.</p><p>Si l'une des opérations mathématiques est impossible, le message suivant doit être affiché selon l'opération:</p><p>"Addition impossible"</p><p>"Soustraction impossible"</p><p>"Division impossible"</p><p>"Multiplication impossible"</p><p>Votre code commence à partir de la ligne 8.</p><p><br/></p></div><div class="langvarhtml"></div><div id="specWording"></div></div></div><div class="card partialminimizable  mb-2 mt-2 toolsCard minflexitem text-justify  wording" id="toolsCard"
     style="display:none"><div class="card-header text-white bg-secondary"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Outils</h5></div><div tabindex="0" class="card-body yscroller" id="tools" aria-labelledby="tools"></div></div><div class="card partialminimizable  mb-2 mt-2 gradeCard minflexitem text-justify" id="gradeCard"
-  style="display:none"><div class="card-header text-white bg-success"><div class="btn-group  float-right"><a href="/codingtest/lastresult/4604/123456789/" id="previousStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant précédent"><span class='material-icons'>skip_previous</span></a><a href="/codingtest/lastresult/4604/123456789/"  id="nextStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant suivant"><span class='material-icons'>skip_next</span></a></div><h5>Notation
+  style="display:none"><div class="card-header text-white bg-success"><div class="btn-group  float-right"><a href="/codingtest/lastresult/4684/123456789/" id="previousStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant précédent"><span class='material-icons'>skip_previous</span></a><a href="/codingtest/lastresult/4684/123456789/"  id="nextStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant suivant"><span class='material-icons'>skip_next</span></a></div><h5>Notation
       <div class="btn-group"><button class="btn-outline-light btn btn-sm " data-toggle="tooltip"  title="Tout valider" onclick="setAllgrades(100)"><span class='material-icons'>check</span></button><button class="btn-outline-dark btn btn-sm " data-toggle="tooltip" title="Tout invalider" onclick="setAllgrades(0)"><span class='material-icons'>cancel</span></button></div></h5></div><div class="card-body list-group yscroller" id="gradelist" aria-labelledby="gradelist"></div></div><div class="card partialminimizable mb-2 mt-2 lastresultcontainer minflexitem" id="lastresultcontainer"
     style="display:none"><div class="card-header text-white bg-info"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Dernier résultat</h5></div><div tabindex="0" class="card-body p-0 yscroller" id="lastresult" aria-labelledby="lastresult"><div id="progressContent" class="bg-white fullscreen-small fullscreen-content" ><h2>En cours d'évaluation</h2><div id="progressContentBody"></div><button class="btn btn-secondary float-right m-2 fullscreen-btn">Revenir à l'exercice</button></div><div id="resultContent"  class="bg-white fullscreen-large fullscreen-content" style="display: flex;flex-direction:column;"><h2 class="only-fullscreen mt-2 mb-2"><img id='gifplace'  style="height:100px;border-radius:10px;margin-right:10px;"><span id="resultContentTitle"></span></h2><div id="resultContentBody" class=" list-group" style="flex: 1 0;"></div><div id="resultContentFooter" class="success-actions-bar  only-fullscreen"><div class="float-right m-2" id="resultModal"><button class="btn btn-secondary fullscreen-btn">Revenir à l'exercice</button><button class="modal-okbutton btn  fullscreen-btn btn-primary ml-2">Réessayer</button></div></div></div><div id="messageContent"  class="bg-white fullscreen-small fullscreen-content"><h2 id="messageContentTitle"></h2><div id="messageContentBody"></div><button class="btn btn-secondary float-right m-2 fullscreen-btn">Revenir à l'exercice</button></div></div></div></div></div><div  class="minimizedsidebar ml-1 mt-1"><div class="btn minimizer btn-circle btn-outline-dark"><span class="material-icons">arrow_right</span></div><div class="btn btn-primary verticaltext mt-1 wordingCard partialminimizer" data-target="#wordingCard">Enoncé</div><div class="btn btn-secondary verticaltext mt-1 toolsCard partialminimizer" data-target="#toolsCard"
   style="display:none">Outils</div><div class="btn btn-success verticaltext mt-1 gradeCard partialminimizer" data-target="#gradeCard"
@@ -240,35 +240,6 @@ var updateActivityUrl = "/activities/update/";
 
   //history management
     
-    let histo = $('<div class="btn-group">' +
-      '<button type="button" class="btn btn-sm  btn-success dropdown-toggle" data-toggle="dropdown">' +
-      'Historique' +
-      '</button>' +
-      '<div class="dropdown-menu h75" id="historyList">' +
-      '</div></div>');
-
-    ide.appendToToolbar(histo);
-    function addHistory(id, date, progression, language) {
-      let item = $('<div class="dropdown-item histo-item" data-id="' + id + '" >' + date + ',' + language + ' (' + progression + '%)</div>');
-      $("#historyList").append(item);
-      item.click(function () {
-        let url = window.location.href;
-
-        url = removeParamInUrl(url, "lang");
-        url = insertParamInUrl(url, "histo", id);
-        window.location.href = url;
-      });
-    }
-    
-    addHistory(18101168, "31 décembre 2025 15:52", 0, "C#");
-    
-    addHistory(18101174, "31 décembre 2025 15:53", 100, "C#");
-    
-    addHistory(18377678, "9 janvier 2026 16:52", 100, "C#");
-    
-    addHistory(18491331, "19 janvier 2026 19:46", 0, "C#");
-    
-    
 
 
 
@@ -287,7 +258,7 @@ var updateActivityUrl = "/activities/update/";
         $.post({
           url: "/exercice/reinit/",
           data: {
-            exercice: 4604,
+            exercice: 4684,
         student: 19023,
       language: current_language_id
         },
@@ -323,7 +294,7 @@ var updateActivityUrl = "/activities/update/";
       hasFirstSubmitted = isStudent;
       ide.resetChange();
       runBtn.prop('disabled', true);
-      submitCode(ide.getContent(), 4604, 9 );
+      submitCode(ide.getContent(), 4684, 9 );
     setExerciceCountDown(10);
   }
 

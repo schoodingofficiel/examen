@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>CreerClient</title>
+    <title>RAT_5</title>
     
     <link rel="shortcut icon" href="https://schooding-media.ams3.digitaloceanspaces.com/static/images/logo.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -63,7 +63,7 @@
     var removeRoleUrl = "/removerole/";  
     var markMessageUrl = "/forum/message/markviewed/12345/";
     var userId = 19023;
-    var csrfToken = "U5RycgznDrsg2idCvkrZaK1iU4ox4G5Uye8L9jaHrd5PQfqBvdGwNQYpGD2rzWCZ";
+    var csrfToken = "LnBZwRL8PsNWHhT4dSXVpI2tRYix9jP0M6R2E65GfqpROWUM0EdE2bQlwlbsowDq";
    var notificationsUrl = "/notifs/list/12345/";
     var mailsUrl = "/forum/maillist/12345/";
     var notifReadUrl = "/notifs/readall/";
@@ -105,11 +105,11 @@
 
 
 <script>
-var exerciceId = 4605; 
+var exerciceId = 4681; 
 var isStudent = true;
 var elapsedTimeAtLoad = parseInt(.0);
 var attempts = parseInt(.0);
-var currentProgression = parseInt(100.0);
+var currentProgression = parseInt(0.0);
 var inSession = false;
 var isHomework = false;
 var homeworkUnlocked = false;
@@ -130,10 +130,10 @@ try {
 
 
   
-  var sendMessageUrl = "/forum/chat/studentmessage/4605/";
-  var chatHistoryUrl = "/forum/chat/history/4605/19023/12345/";
+  var sendMessageUrl = "/forum/chat/studentmessage/4681/";
+  var chatHistoryUrl = "/forum/chat/history/4681/19023/12345/";
 
-  var askForHelpUrl = "/askforhelp/4605";
+  var askForHelpUrl = "/askforhelp/4681";
   
 var updateActivityUrl = "/activities/update/";
 
@@ -182,9 +182,10 @@ var updateActivityUrl = "/activities/update/";
     <div class="fixed-top schoodiv" id="navbars"></div><div id="leftSidebar" class="leftsidebar fitToBottom deployable  schoodiv"><div class="sidebuttonbar  minimizable  ml-1"><div class="btn btn-circle btn-outline-dark deployer mt-1"><span class="material-icons">arrow_left</span></div><div class="btn btn-primary verticaltext mt-1 wordingCard partialminimizer" data-target="#wordingCard">Enoncé</div><div class="btn btn-secondary verticaltext mt-1 toolsCard partialminimizer" data-target="#toolsCard"
   style="display:none">Outils</div><div class="btn btn-success verticaltext mt-1 gradeCard partialminimizer" data-target="#gradeCard"
     style="display:none">Notation</div><div class="btn btn-info verticaltext mt-1 lastresultcontainer partialminimizer" data-target="#lastresultcontainer"
-  style="display:none">Dernier résultat</div></div><div class="splitbar minimizable "></div><div id="leftSidebarContent" class="minimizable fitToBottom vflexcontainer"><div id="wordingCol" class="fitToBottom d-flex flex-column"><div class="card partialminimizable mb-2 mt-2 wordingCard minflexitem text-justify" id="wordingCard"><div class="bg-primary card-header text-light"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Enoncé</h5></div><div tabindex="0" class="card-body yscroller wording" id="wording" aria-labelledby="wording"><h5 class="langvarhtml">$TR$fr CreerClient</h5><div class="langvarhtml">$TR$fr <ol><li>Create a C# function 'CreerClient' that create and return a client based on the data structure 'Client'. The function do not receive parameters.  <br/></li></ol></div><div class="langvarhtml"></div><div id="specWording"></div></div></div><div class="card partialminimizable  mb-2 mt-2 toolsCard minflexitem text-justify  wording" id="toolsCard"
+  style="display:none">Dernier résultat</div></div><div class="splitbar minimizable "></div><div id="leftSidebarContent" class="minimizable fitToBottom vflexcontainer"><div id="wordingCol" class="fitToBottom d-flex flex-column"><div class="card partialminimizable mb-2 mt-2 wordingCard minflexitem text-justify" id="wordingCard"><div class="bg-primary card-header text-light"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Enoncé</h5></div><div tabindex="0" class="card-body yscroller wording" id="wording" aria-labelledby="wording"><h5 class="langvarhtml">$TR$en RAT_5$TR$fr RAT_5</h5><div class="langvarhtml">$TR$en <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Create a C# method named <b>"strToPhrase"</b> that accepts an input string str without any spaces. The method should return a sentence "phr" by inserting spaces before each transition from a lowercase letter to an uppercase letter or from an uppercase letter to a lowercase letter.</p><p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">All uppercase letters in the input string must be converted to lowercase in the final sentence.</p><p class="font-claude-response-body break-words whitespace-pre-wrap leading-[1.7]">Example: if str="laSNCFacheteDEnouveauxTGV"
+then phr="la sncf achete de nouveaux tgv".</p><p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The method should return null if the input string is null.</p>$TR$fr <p>Créer un programme en C# nommé <strong>"strToPhrase"</strong> qui prend en entrée une chaîne de caractères <strong>str</strong> ne contenant pas d’espaces. Le programme doit retourner une phrase <strong>phr</strong> en ajoutant des espaces avant chaque changement d’une lettre minuscule à une lettre majuscule ou inversement.</p><p>Les majuscules dans la chaîne d’entrée seront transformées en minuscules dans la phrase finale.</p><p></p><p>Par exemple: si str="laSNCFacheteDEnouveauxTGV"</p><p>alors phr="la sncf achete de nouveaux tgv".</p><p>Le programme doit retourner null si la chaine en entrée est nulle. <br/></p></div><div class="langvarhtml"></div><div id="specWording"></div></div></div><div class="card partialminimizable  mb-2 mt-2 toolsCard minflexitem text-justify  wording" id="toolsCard"
     style="display:none"><div class="card-header text-white bg-secondary"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Outils</h5></div><div tabindex="0" class="card-body yscroller" id="tools" aria-labelledby="tools"></div></div><div class="card partialminimizable  mb-2 mt-2 gradeCard minflexitem text-justify" id="gradeCard"
-  style="display:none"><div class="card-header text-white bg-success"><div class="btn-group  float-right"><a href="/codingtest/lastresult/4605/123456789/" id="previousStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant précédent"><span class='material-icons'>skip_previous</span></a><a href="/codingtest/lastresult/4605/123456789/"  id="nextStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant suivant"><span class='material-icons'>skip_next</span></a></div><h5>Notation
+  style="display:none"><div class="card-header text-white bg-success"><div class="btn-group  float-right"><a href="/codingtest/lastresult/4681/123456789/" id="previousStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant précédent"><span class='material-icons'>skip_previous</span></a><a href="/codingtest/lastresult/4681/123456789/"  id="nextStudentBtn" class="btn-default btn btn-sm" data-toggle="tooltip" title="Etudiant suivant"><span class='material-icons'>skip_next</span></a></div><h5>Notation
       <div class="btn-group"><button class="btn-outline-light btn btn-sm " data-toggle="tooltip"  title="Tout valider" onclick="setAllgrades(100)"><span class='material-icons'>check</span></button><button class="btn-outline-dark btn btn-sm " data-toggle="tooltip" title="Tout invalider" onclick="setAllgrades(0)"><span class='material-icons'>cancel</span></button></div></h5></div><div class="card-body list-group yscroller" id="gradelist" aria-labelledby="gradelist"></div></div><div class="card partialminimizable mb-2 mt-2 lastresultcontainer minflexitem" id="lastresultcontainer"
     style="display:none"><div class="card-header text-white bg-info"><button class="btn-default btn btn-sm fullscreen-btn float-right" data-toggle="tooltip" title="Mode plein écran"><span class='material-icons'>fullscreen</span></button><h5>Dernier résultat</h5></div><div tabindex="0" class="card-body p-0 yscroller" id="lastresult" aria-labelledby="lastresult"><div id="progressContent" class="bg-white fullscreen-small fullscreen-content" ><h2>En cours d'évaluation</h2><div id="progressContentBody"></div><button class="btn btn-secondary float-right m-2 fullscreen-btn">Revenir à l'exercice</button></div><div id="resultContent"  class="bg-white fullscreen-large fullscreen-content" style="display: flex;flex-direction:column;"><h2 class="only-fullscreen mt-2 mb-2"><img id='gifplace'  style="height:100px;border-radius:10px;margin-right:10px;"><span id="resultContentTitle"></span></h2><div id="resultContentBody" class=" list-group" style="flex: 1 0;"></div><div id="resultContentFooter" class="success-actions-bar  only-fullscreen"><div class="float-right m-2" id="resultModal"><button class="btn btn-secondary fullscreen-btn">Revenir à l'exercice</button><button class="modal-okbutton btn  fullscreen-btn btn-primary ml-2">Réessayer</button></div></div></div><div id="messageContent"  class="bg-white fullscreen-small fullscreen-content"><h2 id="messageContentTitle"></h2><div id="messageContentBody"></div><button class="btn btn-secondary float-right m-2 fullscreen-btn">Revenir à l'exercice</button></div></div></div></div></div><div  class="minimizedsidebar ml-1 mt-1"><div class="btn minimizer btn-circle btn-outline-dark"><span class="material-icons">arrow_right</span></div><div class="btn btn-primary verticaltext mt-1 wordingCard partialminimizer" data-target="#wordingCard">Enoncé</div><div class="btn btn-secondary verticaltext mt-1 toolsCard partialminimizer" data-target="#toolsCard"
   style="display:none">Outils</div><div class="btn btn-success verticaltext mt-1 gradeCard partialminimizer" data-target="#gradeCard"
@@ -240,35 +241,6 @@ var updateActivityUrl = "/activities/update/";
 
   //history management
     
-    let histo = $('<div class="btn-group">' +
-      '<button type="button" class="btn btn-sm  btn-success dropdown-toggle" data-toggle="dropdown">' +
-      'Historique' +
-      '</button>' +
-      '<div class="dropdown-menu h75" id="historyList">' +
-      '</div></div>');
-
-    ide.appendToToolbar(histo);
-    function addHistory(id, date, progression, language) {
-      let item = $('<div class="dropdown-item histo-item" data-id="' + id + '" >' + date + ',' + language + ' (' + progression + '%)</div>');
-      $("#historyList").append(item);
-      item.click(function () {
-        let url = window.location.href;
-
-        url = removeParamInUrl(url, "lang");
-        url = insertParamInUrl(url, "histo", id);
-        window.location.href = url;
-      });
-    }
-    
-    addHistory(18095819, "30 décembre 2025 20:16", 50, "C#");
-    
-    addHistory(18095832, "30 décembre 2025 20:18", 100, "C#");
-    
-    addHistory(18376003, "9 janvier 2026 16:48", 100, "C#");
-    
-    addHistory(18491329, "19 janvier 2026 19:45", 0, "C#");
-    
-    
 
 
 
@@ -287,7 +259,7 @@ var updateActivityUrl = "/activities/update/";
         $.post({
           url: "/exercice/reinit/",
           data: {
-            exercice: 4605,
+            exercice: 4681,
         student: 19023,
       language: current_language_id
         },
@@ -323,7 +295,7 @@ var updateActivityUrl = "/activities/update/";
       hasFirstSubmitted = isStudent;
       ide.resetChange();
       runBtn.prop('disabled', true);
-      submitCode(ide.getContent(), 4605, 9 );
+      submitCode(ide.getContent(), 4681, 9 );
     setExerciceCountDown(10);
   }
 
