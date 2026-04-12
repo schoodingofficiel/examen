@@ -24,7 +24,7 @@
 
     // === 3. MISE À JOUR DE L'INTERFACE PARENTE ===
     const nameSpan = document.querySelector("#time .small i") || document.querySelector("#time .small");
-    if (nameSpan) nameSpan.innerHTML = `<span style="font-style: italic;">${displayedName}*</span>`;
+    if (nameSpan) nameSpan.innerHTML = `<span style="font-style: italic;">${displayedName}</span>`;
 
     const navTabs = document.querySelector(".nav-tabs");
     const countdownElement = document.querySelector(".countdown");
