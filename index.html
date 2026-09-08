@@ -81,9 +81,20 @@
             });
         </script>
         <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+
+            #exoTabContent {
+                height: calc(100vh - 45px);
+            }
+
             .tab-pane {
-                height : calc(100vh - 90px);
-                overflow-y: auto;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
             }
 
             .schooding, .schooding a {
@@ -100,6 +111,13 @@
             .paniframe {
                 position: relative;
                 background: url(https://schooding-media.ams3.digitaloceanspaces.com/static/images/loading.gif) center center no-repeat;
+            }
+
+            .exoIframe {
+                height: 100% !important;
+                width: 100%;
+                border: none;
+                display: block;
             }
         </style>
         <script>
