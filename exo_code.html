@@ -176,26 +176,41 @@ var updateActivityUrl = "/activities/update/";
 
 
 <style>
-  /* Force tout le conteneur et ses enfants à occuper toute la hauteur de l'iframe */
+  /* Force toute la page iframe à prendre 100% de la hauteur */
   html, body, #mainContainer, #idecontainer, .fitToBottom {
     height: 100% !important;
     max-height: 100% !important;
     min-height: 100% !important;
     bottom: 0 !important;
+    top: 0 !important;
   }
 
-  /* Desactive les calculs JS dynamiques de la barre laterale et du conteneur */
-  #leftSidebarContent, #wordingCol, #wordingCard {
+  /* Correctif pour les panneaux latéraux (énoncé) */
+  #leftSidebar, #leftSidebarContent, #wordingCol, #wordingCard {
     height: 100% !important;
     max-height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
-  /* Force le composant d'éditeur Ace / IDE à s'étendre verticalement */
+  /* Force le corps de la carte d'énoncé à défiler au besoin sans tronquer */
+  #wordingCard .card-body {
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+  }
+
+  /* Force l'éditeur IDE Ace à s'étendre sur toute la hauteur restante */
+  #idecontainer {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
   #idecontainer .tab-content, 
   #idecontainer .tab-pane, 
   .ace_editor {
     height: 100% !important;
     min-height: 100% !important;
+    flex: 1 1 auto !important;
   }
 </style>
 
@@ -404,9 +419,13 @@ var updateActivityUrl = "/activities/update/";
 
     
 
-    $(document).ready(function () {
+   $(document).ready(function () {
+  setTimeout(function() {
+    if (typeof ide !== 'undefined') {
       ide.resize();
-    });
+    }
+  }, 200);
+});
     
   
 
