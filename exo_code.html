@@ -175,7 +175,29 @@ var updateActivityUrl = "/activities/update/";
 
 
 
+<style>
+  /* Force tout le conteneur et ses enfants à occuper toute la hauteur de l'iframe */
+  html, body, #mainContainer, #idecontainer, .fitToBottom {
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 100% !important;
+    bottom: 0 !important;
+  }
 
+  /* Desactive les calculs JS dynamiques de la barre laterale et du conteneur */
+  #leftSidebarContent, #wordingCol, #wordingCard {
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  /* Force le composant d'éditeur Ace / IDE à s'étendre verticalement */
+  #idecontainer .tab-content, 
+  #idecontainer .tab-pane, 
+  .ace_editor {
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+</style>
 
   </head>
   <body class="full  headless"> 
